@@ -1,0 +1,17 @@
+<h1>{{title}}</h1>
+<p>
+    Welcome to {{title}}
+    <br>
+</p>
+
+<ul>
+{{#each cats}}
+    <li>{{this}}</li>
+{{/each}}
+</ul>
+
+{{#each posts}}<!--using this each helper to go through all posts-->
+<p>
+    <a href="/{{id}}">{{title}}</a><!--In order to give the blog posts their own page, we finna wrap them in aTags-->
+</p><!--Simply printing the title-->
+{{/each}}
